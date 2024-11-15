@@ -14,3 +14,4 @@ YAML파일이 있는 디렉토리 위치에서 명령을 실행해야한다
 **docker-compose up -d**
 + 설치 확인1 : docker ps
 + 설치 확인2 : docker desktop에서 확인
+![image](https://github.com/user-attachments/assets/102670f3-8d7a-464f-8ba8-663d7a27542a)
