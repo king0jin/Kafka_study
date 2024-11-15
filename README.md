@@ -37,3 +37,22 @@ YAML파일이 있는 디렉토리 위치에서 명령을 실행해야한다
 
 
 ![image](https://github.com/user-attachments/assets/6a40e3dc-5505-4ae6-a965-bbd29fb432ae)
+---
+## Python에서 Kafka사용
+**Python에서 Kafka를 사용하기 위해서는 패키지를 설치해야하는데 패키지 설치를 위해 가상환경이 필요하다**
++ python디렉토리를 만들고 해당 디렉토리에서 가상환경을 생성하여 CMD창으로 변경하여 가상환경을 활성화하여 패키지 설치
++ **pip install kafka-python**
+
+### Topic을 생성하여 메세지 전송 : pythonproducer.py
++ send, write, print 수행 : 버퍼에 기록하는 것
++ 메세지 전송 수행 : 버퍼가 가득 찬 것을 의미
++ flush 수행 : 버퍼를 비우는 것
+
+
+![image](https://github.com/user-attachments/assets/66183019-2439-495f-8179-e57c36a2fcba)
+
+### 메세지를 받았는지 확인 : pythonconsumer.py
++ 새로운 CMD창에서 실행
+
+
+![image](https://github.com/user-attachments/assets/aa163a27-1e20-47ce-847a-40c9dcef9f2f)
