@@ -34,4 +34,6 @@ YAML파일이 있는 디렉토리 위치에서 명령을 실행해야한다
 새로운 터미널을 새로 열어서 실행한다
 + kafka-console-consumer.sh --topic exam-topic --bootstrap-server localhost:9092 --from-beginning
 입력한 메세지가 전송되어서 보인다 
+
+
 ![image](https://github.com/user-attachments/assets/6a40e3dc-5505-4ae6-a965-bbd29fb432ae)
