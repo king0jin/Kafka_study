@@ -1,5 +1,5 @@
 # Kafka_study
-vsCode로 Docker에 Kafka설치하고 Python에서 Kafka사용하기
+VScode로 Docker에 Kafka설치하고 Python에서 Kafka사용하기
 
 ## Docker에 Kafka설치
 + YAML파일이 필요하다
