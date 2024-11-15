@@ -14,3 +14,18 @@ YAML파일이 있는 디렉토리 위치에서 명령을 실행해야한다
 **docker-compose up -d**
 + 설치 확인1 : docker ps
 + 설치 확인2 : docker desktop에서 확인
+
+### Kafka Test
+#### Topic 생성
+1. kafka컨테이너로 접속 : docker exec -it kafka /bin/bash
+2. 실행 관련 명령들이 저장되어 있는 bin디렉토리로 이동 : cd /opt/kafka/bin
+3. Topic 생성 : kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 1 --topic exam-topic
+4. Topic 조회 : kafka-topics.sh --bootstrap-server localhost:9092 --list
+5. Topic 삭제 : kafka-console-producer.sh --topic exam-topic --broker-list localhost:9092
+#### 메세지 전송
++ kafka-console-producer.sh --topic exam-topic --broker-list localhost:9092
+  + 메세지 입력
+#### 전송한 메세지 확인
+새로운 터미널을 새로 열어서 실행한다
++ kafka-console-consumer.sh --topic exam-topic --bootstrap-server localhost:9092 --from-beginning
+입력한 메세지가 전송되어서 보인다 
