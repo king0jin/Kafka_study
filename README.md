@@ -11,6 +11,8 @@ vsCode로 Docker에 Kafka설치하고 Python에서 Kafka사용하기
 
 ### 설치 명령
 YAML파일이 있는 디렉토리 위치에서 명령을 실행해야한다
+
+
 **docker-compose up -d**
 + 설치 확인1 : docker ps
 + 설치 확인2 : docker desktop에서 확인
@@ -35,6 +37,8 @@ YAML파일이 있는 디렉토리 위치에서 명령을 실행해야한다
 #### 전송한 메세지 확인
 새로운 터미널을 새로 열어서 실행한다
 + kafka-console-consumer.sh --topic exam-topic --bootstrap-server localhost:9092 --from-beginning
+
+
 입력한 메세지가 전송되어서 보인다 
 
 
